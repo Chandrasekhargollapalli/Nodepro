@@ -12,6 +12,6 @@ app.use(cors())
 app.use(express.json());
 app.use("/api/auth",authRoutes)
 
-app.listen(Port,()=>{
+app.listen(Port,"0.0.0.0",()=>{
     console.log('server is running on port ',Port)
 })
