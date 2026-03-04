@@ -2,7 +2,9 @@ import express from 'express'
 import User from '../models/User.js'
 
 const router = express.Router()
-
+router.get('/chandu',(req,res)=>{
+    res.send('hello chandu')
+})
 router.post('/signup',async(req,res)=>{
     const {name,email,password}=req.body
    const newUser = new User({name,email,password})
